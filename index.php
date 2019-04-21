@@ -10,6 +10,7 @@ require 'phpheader.php';
 	// echo print_r($chromosomes,true);
 ?> 
 
+
 <td valign="top">
 			<td valign="top">
 			<p align="justify"><div class="slideshow"><style>
@@ -157,7 +158,7 @@ available genetic discoveries.
 	 foreach ($chromosomes as $chr) { 
 		$size = $chr['size']*10;
 	?>
-			<td><a href="chr.php?id_chrom=<?php  echo $chr['id_chrom']; ?>?name=<?php  echo $chr['name']; ?>?size=<?php  echo $chr['size']; ?>"><div style="border-radius:10px;border:1px;background-color:black;width:10; height:<?php  echo $size; ?>"></div></a></td>
+			<td><a href="chr.php?id_lg=<?php  echo $chr['id_chrom']; ?>?name=<?php  echo $chr['name']; ?>?size=<?php  echo $chr['size']; ?>"><div style="border-radius:10px;border:1px;background-color:black;width:10; height:<?php  echo $size; ?>"></div></a></td>
 	<?php 
 } 
  ?>
